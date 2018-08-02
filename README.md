@@ -1,9 +1,21 @@
 # kappbar
 
-A new flutter package project.
+custom flutter appbar
 
 ## Getting Started
 
-For help getting started with Flutter, view our online [documentation](https://flutter.io/).
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
 
-For help on editing package code, view the [documentation](https://flutter.io/developing-packages/).
+  #...
+
+  kappbar:
+    git:
+      url: https://github.com/CaiJingLong/flutter_kappbar.git
+```
+
+```dart
+import 'package:kappbar/kappbar.dart';
+```

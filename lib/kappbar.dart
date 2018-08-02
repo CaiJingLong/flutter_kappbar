@@ -5,11 +5,12 @@ import 'package:flutter/material.dart';
 class MyAppBar extends PreferredSize {
   final title;
   final double height;
+  final double elevation;
 
   final List<Widget> actions;
   final bool centerTitle;
 
-  MyAppBar({this.title, this.height = 55.0, this.actions, this.centerTitle = true});
+  MyAppBar({this.title, this.height = 55.0, this.actions, this.centerTitle = true, this.elevation = 4.0});
 
   @override
   Size get preferredSize {
@@ -41,6 +42,7 @@ class MyAppBar extends PreferredSize {
       title: _title,
       actions: actions,
       centerTitle: centerTitle,
+      elevation: elevation ?? 4.0,
     );
   }
 }
